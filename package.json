@@ -1,6 +1,6 @@
 {
   "name": "api-app.tubsol.es",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "API for Tubsol",
   "main": "src/index.js",
   "scripts": {

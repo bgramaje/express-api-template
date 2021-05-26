@@ -1,5 +1,5 @@
 ## 🚀 Node.js Express API Template
-> Basic template to get your project started from scratch! .
+> Basic template to get your project started from scratch!
 
 
 👨🏻‍💻 Hey coder! In this repository you will find a basic schema structure to start your own REST API. 
@@ -24,6 +24,7 @@ _Developer dependencies:_
 * [mocha](https://www.npmjs.com/package/mocha) - Simple, flexible, fun test framework
 * [nodemon](https://www.npmjs.com/package/nodemon) - Simple monitor script for use during development of a node.js app.
 * [supertest](https://www.npmjs.com/package/supertest) - SuperAgent driven library for testing HTTP servers
+
 ### Installation
 1. Clone the repository
 ```sh
@@ -60,12 +61,17 @@ npm run dev
 
 ### Release History
 
-* 0.1.1
+* 1.0.2
     * Add `README.md`
-* 0.1.0
+* 1.0.1
     * The first proper release
-* 0.0.1
+* 1.0.0
     * Work in progress
+
+### Mentions
+
+A mention to [CJ R.](https://github.com/w3cj), for the following [repository](https://github.com/w3cj/express-api-starter) as a guidance for doing the base of this template. 
+
 
 ### License
 
