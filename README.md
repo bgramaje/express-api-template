@@ -2,11 +2,13 @@
 > Basic template to get your project started from scratch! .
 
 
-👨🏻‍💻 Hey coder! In this repository you will find a basic schema structure to start your own REST API. This schema is made by some best practices I encountered and think they are pretty usefull to make your code nicer and organized.👨🏻‍💻
+👨🏻‍💻 Hey coder! In this repository you will find a basic schema structure to start your own REST API. 
+This schema is made by some best practices I encountered and think they are pretty usefull to make your code nicer and organized.👨🏻‍💻
 
 ### Built with 🛠️
 
 _The following dependecies are used in this schema_
+
 _Dependencies:_
 * [cors](https://www.npmjs.com/package/cors) - Node.js CORS middleware
 * [dotenv](https://www.npmjs.com/package/dotenv) - Loads environment variables from .env file
@@ -37,7 +39,13 @@ npm run dev
 ```
 ### Folder structure
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+ .
+    ├── ...
+    ├── test                    # Test files (alternatively `spec` or `tests`)
+    │   ├── benchmarks          # Load and stress tests
+    │   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
+    │   └── unit                # Unit tests
+    └── ...
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
