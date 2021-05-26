@@ -59,6 +59,26 @@ npm run dev
 └── ...
 ```
 
+> In each folder of the api, there is an index file. In that file all elements are imported and exported, in order to make easier the import list, as an only import instead of X different imports.
+
+```bash
+.
+├── api        # api directory including all default shcema
+│   ├── controllers          
+│   │   └── index.controllers.js        # all controllers imported and exported as one object
+│   ├── db                   
+│   │   └── index.db.js                 # all db imported and exported as one object
+│   ├── middlewares          
+│   │   └── index.middlewares.js        # all middlewares imported and exported as one object  
+│   ├── models             
+│   │   └── index.models.js             # all models imported and exported as one object  
+│   ├── routes           
+│   │   └── index.routes.js             # all routes imported and exported as one object  
+│   └── scripts              
+│       └── index.scripts.js            # all scripts imported and exported as one object  
+└── ...
+```
+
 ### Release History
 
 * 1.0.2
