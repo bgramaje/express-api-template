@@ -5,8 +5,14 @@ const cors = require('cors');
 
 require('dotenv').config();
 
-const { isErrorMiddleware } = require('./api/middlewares/index.middleware');
-const { helloRouter } = require('./api/routes/index.routes')
+const { 
+    isErrorMiddleware,
+    authMiddleware 
+} = require('./api/middlewares/index.middleware');
+
+const { 
+    helloRouter 
+} = require('./api/routes/index.routes')
 
 const app = express();
 
