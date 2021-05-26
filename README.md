@@ -45,7 +45,7 @@ npm run dev
 ├── src         # Source files 
 │   ├── api         # api directory including all default shcema
 │   │   ├── controllers          # express routes functions 
-│   │   ├── lib                  # functions that works over the DDBB (updates, deletes, lists..)
+│   │   ├── db                   # functions that works over the DDBB (updates, deletes, lists..)
 │   │   ├── middlewares          # express middlewares (jsonwebtoken...)
 │   │   ├── models               # models of the ddbb
 │   │   ├── routes               # express routes declaration
