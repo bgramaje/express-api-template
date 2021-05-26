@@ -16,6 +16,7 @@ _Dependencies:_
 * [helmet](https://www.npmjs.com/package/helmet) - Help secure Express/Connect apps with various HTTP headers
 * [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) - JSON Web Token implementation (symmetric and asymmet
 * [morgan](https://www.npmjs.com/package/morgan) - HTTP request logger middleware for node.js
+* [cookie-parser](https://www.npmjs.com/package/cookie-parser) - Parse HTTP request cookies
 
 _Developer dependencies:_
 * [eslint](https://www.npmjs.com/package/eslint) - An AST-based pattern checker for JavaScript.
