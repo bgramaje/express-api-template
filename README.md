@@ -84,7 +84,8 @@ npm run dev
 ```
 
 ### Release History
-
+* 1.0.3
+    * Added `express-async-handler` and `compression` packages
 * 1.0.2
     * Add `README.md`
 * 1.0.1
