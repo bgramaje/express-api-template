@@ -2,12 +2,12 @@
 > Basic template to get your project started from scratch!
 
 
-👨🏻‍💻 Hey coder! In this repository you will find a basic schema structure to start your own REST API. 
-This schema is made by some best practices I encountered and think they are pretty usefull to make your code nicer and organized.👨🏻‍💻
+👨🏻‍💻 Hey coder! In this repository you will find a basic schema structure to start your own REST API. 👨🏻‍💻
+This schema is made by some best practices I encountered and think they are pretty usefull to make your code nicer and organized.
 
 ### Built with 🛠️
 
-_The following dependecies are used in this schema_
+_The following dependecies are used in the project_
 
 _Dependencies:_
 * [cors](https://www.npmjs.com/package/cors) - Node.js CORS middleware
@@ -25,6 +25,7 @@ _Developer dependencies:_
 * [mocha](https://www.npmjs.com/package/mocha) - Simple, flexible, fun test framework
 * [nodemon](https://www.npmjs.com/package/nodemon) - Simple monitor script for use during development of a node.js app.
 * [supertest](https://www.npmjs.com/package/supertest) - SuperAgent driven library for testing HTTP servers
+* [babel](https://babeljs.io/) - The compiler for next generation JavaScript
 
 ### Installation
 1. Clone the repository
