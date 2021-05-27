@@ -18,6 +18,7 @@ _Dependencies:_
 * [morgan](https://www.npmjs.com/package/morgan) - HTTP request logger middleware for node.js
 * [cookie-parser](https://www.npmjs.com/package/cookie-parser) - Parse HTTP request cookies
 * [compression](https://www.npmjs.com/package/compression) - Node.js compression middleware
+* [express-async-handler](https://www.npmjs.com/package/express-async-handler) - Express Error Handler for Async Functions
 
 _Developer dependencies:_
 * [eslint](https://www.npmjs.com/package/eslint) - An AST-based pattern checker for JavaScript.
