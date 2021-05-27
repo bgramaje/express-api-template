@@ -17,6 +17,7 @@ _Dependencies:_
 * [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) - JSON Web Token implementation (symmetric and asymmet
 * [morgan](https://www.npmjs.com/package/morgan) - HTTP request logger middleware for node.js
 * [cookie-parser](https://www.npmjs.com/package/cookie-parser) - Parse HTTP request cookies
+* [compression](https://www.npmjs.com/package/compression) - Node.js compression middleware
 
 _Developer dependencies:_
 * [eslint](https://www.npmjs.com/package/eslint) - An AST-based pattern checker for JavaScript.
