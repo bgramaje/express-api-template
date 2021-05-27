@@ -1,17 +1,19 @@
 {
-  "name": "api-app.tubsol.es",
-  "version": "1.0.2",
-  "description": "API for Tubsol",
+  "name": "express-api-template",
+  "version": "1.0.0",
+  "description": "A basic template for building your express API from scratch!",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
+    "build": "babel src --out-dir dist",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.js --exec babel-node",
     "lint": "eslint --fix src",
     "test": "mocha --exit"
   },
   "author": "balbert",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
@@ -21,6 +23,10 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
     "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.3",
