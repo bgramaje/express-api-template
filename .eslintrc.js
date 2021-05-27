@@ -1,13 +1,19 @@
 module.exports = {
-    env: {
-        jest: true,
-    },
-    extends: 'airbnb-base',
-    rules: {
-        'comma-dangle': 0,
-        'no-underscore-dangle': 0,
-        'no-param-reassign': 0,
-        'no-return-assign': 0,
-        camelcase: 0,
-    }
+  env: {
+    commonjs: true,
+    es2021: true,
+    node: true,
+  },
+  extends: [
+    'airbnb-base',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+  },
+  rules: {
+  },
 };

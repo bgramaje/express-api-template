@@ -6,13 +6,13 @@ const cookieParser = require('cookie-parser');
 
 require('dotenv').config();
 
-const { 
+const {
     isErrorMiddleware,
-    authMiddleware 
+    authMiddleware
 } = require('./api/middlewares/index.middleware');
 
-const { 
-    helloRouter 
+const {
+    helloRouter
 } = require('./api/routes/index.routes')
 
 const app = express();
@@ -22,6 +22,7 @@ app.use(helmet());
 app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
     res.json({

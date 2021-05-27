@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
  * @param {*} req 
  * @param {*} res 
  * @param {*} next 
- * @returns an invalid state of the token, it it does not return anything, the token is correct and it proceeds to the next() call.
+ * @returns an invalid state of the token, if it does not return anything, the token is correct and it proceeds to the next() call.
  */
 const authToken = async (req, res, next) => {
     const token = req.headers['x-access-token']
