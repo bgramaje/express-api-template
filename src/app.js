@@ -5,16 +5,18 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
 
-require('dotenv').config();
-
 const {
     isErrorMiddleware,
-    authMiddleware
-} = require('./api/middlewares/index.middleware');
+} = require('./api/middlewares');
 
 const {
     helloRouter
-} = require('./api/routes/index.routes')
+} = require('./api/routes')
+
+const {
+    HOME,
+    HELLO
+} = require('./config/routes')
 
 const app = express();
 
@@ -26,13 +28,13 @@ app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
+app.get(HOME, (req, res) => {
     res.json({
-        message: '🌈👋🌎'
+        message: 'HOME - 🌈👋🌎'
     });
 });
 
-app.use('/hello', helloRouter)
+app.use(HELLO, helloRouter)
 
 app.use(isErrorMiddleware.notFound);
 app.use(isErrorMiddleware.errorHandler);

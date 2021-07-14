@@ -3,7 +3,7 @@ const asyncHandler = require('express-async-handler')
 
 const router = express.Router();
 
-const { helloCtrl } = require('../controllers/index.controllers');
+const { helloCtrl } = require('../controllers');
 
 /**
  * @description /, 👋 displays a hello message!

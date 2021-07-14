@@ -42,7 +42,7 @@ npm install
 ```sh
 npm run dev
 ```
-### Folder structure
+### /.src Folder
 ```bash
 .
 ├── ...
@@ -51,15 +51,14 @@ npm run dev
 │   │   ├── controllers          # express routes functions 
 │   │   ├── db                   # functions that works over the DDBB (updates, deletes, lists..)
 │   │   ├── middlewares          # express middlewares (jsonwebtoken...)
-│   │   ├── models               # models of the ddbb
 │   │   ├── routes               # express routes declaration
 │   │   └── scripts              # backend scripts
 │   ├── config      # config file
+│   │   ├── db          # contains all DDBB config files
+│   │   ├── routes          # exports all routes globally
 │   ├── app.js      # express app server
 │   └── index.js    # starts the server (app.js) in the port established or in a default port      
 ├── test        # Test files (alternatively `spec` or `tests`)
-│   ├── app.test.js              # Unit tests for app.js
-│   └── hello.routes.test.js     # Unit tests for hello.routes.js
 └── ...
 ```
 
@@ -69,21 +68,32 @@ npm run dev
 .
 ├── api        # api directory including all default shcema
 │   ├── controllers          
-│   │   └── index.controllers.js        # all controllers imported and exported as one object
+│   │   └── index.js        # all controllers imported and exported as one object
 │   ├── db                   
-│   │   └── index.db.js                 # all db imported and exported as one object
+│   │   └── index.js                 # all db imported and exported as one object
 │   ├── middlewares          
-│   │   └── index.middlewares.js        # all middlewares imported and exported as one object  
-│   ├── models             
-│   │   └── index.models.js             # all models imported and exported as one object  
+│   │   └── index.js        # all middlewares imported and exported as one object  
 │   ├── routes           
-│   │   └── index.routes.js             # all routes imported and exported as one object  
+│   │   └── index.js             # all routes imported and exported as one object  
 │   └── scripts              
-│       └── index.scripts.js            # all scripts imported and exported as one object  
+│       └── index.js            # all scripts imported and exported as one object  
+└── ...
+```
+
+### /.test Folder
+```bash
+.
+├── ...
+├── src         # Source files 
+├── test        # Test files (alternatively `spec` or `tests`)
+│   ├── app.test.js              # Unit tests for app.js
+│   └── hello.routes.test.js     # Unit tests for hello.routes.js
 └── ...
 ```
 
 ### Release History
+* 1.0.4
+    * Renamed all index files to `index.js` for import purposes, and updated `config` folder
 * 1.0.3
     * Added `express-async-handler` and `compression` packages
 * 1.0.2

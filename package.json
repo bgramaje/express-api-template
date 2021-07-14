@@ -1,6 +1,6 @@
 {
   "name": "express-api-template",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A basic template for building your express API from scratch!",
   "main": "src/index.js",
   "scripts": {
